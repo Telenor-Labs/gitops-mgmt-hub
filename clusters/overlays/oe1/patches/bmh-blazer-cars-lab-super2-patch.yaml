@@ -7,10 +7,10 @@
   value: redfish-virtualmedia+http://kvmhost2.remote-skylark-ldc1.cars.lab:8082/redfish/v1/Systems/8273cc27-82c1-54dc-9eab-a75ea53f1ebf
 - op: replace
   path: /spec/bmc/credentialsName
-  value: blazer-cars-lab-bmc-super2
+  value: gitops-sno-oe-bmc-super2
 - op: replace
   path: /metadata/labels/infraenvs.agent-install.openshift.io
-  value: blazer-cars-lab-infraenv
+  value: gitops-sno-oe-infraenv
 - op: replace
   path: /metadata/name
-  value: blazer-cars-lab-super2
+  value: gitops-sno-oe-super2

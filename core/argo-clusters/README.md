@@ -9,7 +9,7 @@ This clusterSet is then bound to a specific namespace, using a `ManagedClusterSe
 Apply the following
 ```
 oc apply -f managed-cluster-set.yaml
-oc label managedcluster blazer-cars-lab cluster.open-cluster-management.io/clusterset=oall-openshift-clusters
+oc label managedcluster gitops-sno-oe cluster.open-cluster-management.io/clusterset=oall-openshift-clusters
 ```
 
 [Find more information about ManagedClusterSet](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html/clusters/managing-your-clusters#creating-a-managedclusterset)
@@ -20,7 +20,7 @@ Now that we created the grouping of clusters to work with, let's import them in 
 Apply the following
 ```
 oc apply -f gitopscluster.yaml
-oc label managedcluster blazer-cars-lab local-argo=True
+oc label managedcluster gitops-sno-oe local-argo=True
 ```
 
 [Find more information about the integration of ACM with ArgoCD](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html/applications/managing-applications#gitops-config)

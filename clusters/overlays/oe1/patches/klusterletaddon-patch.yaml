@@ -1,9 +1,9 @@
 - op: replace
   path: /spec/clusterName
-  value: 'blazer-cars-lab'
+  value: 'gitops-sno-oe'
 - op: replace
   path: /spec/clusterNamespace
-  value: 'blazer-cars-lab'
+  value: 'gitops-sno-oe'
 - op: replace
   path: /metadata/name
-  value: blazer-cars-lab
+  value: gitops-sno-oe

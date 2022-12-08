@@ -2,11 +2,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: blazer-cars-lab
-# namePrefix: blazer-cars-lab-
+namespace: sno
+namePrefix: gitops-
+nameSuffix: -oe
 
 bases:
-  - github.com/telenor-labs/gitops-ocp-base/base/3-node?ref=main
+  - github.com/telenor-labs/gitops-ocp-base/base/sno?ref=main
 
 patchesStrategicMerge:
   - ./patches/nmstate-config.yaml
@@ -19,61 +20,53 @@ patches:
     patch: |-
       - op: replace
         path: /metadata/labels/name
-        value: 'blazer-cars-lab'
+        value: 'gitops-sno-oe'
   - target:
       kind: AgentClusterInstall
     patch: |-
       - op: replace
         path: /spec/clusterDeploymentRef/name
-        value: 'blazer-cars-lab'
+        value: 'gitops-sno-oe'
       - op: replace
         path: /metadata/name
-        value: 'blazer-cars-lab'
+        value: 'gitops-sno-oe'
   - target:
       kind: SealedSecret
     patch: |-
       - op: replace
         path: /spec/template/metadata/namespace
-        value: 'blazer-cars-lab'
+        value: 'gitops-sno-oe'
   - target:
       kind: Secret
       name: bmc-super1
     patch: |-
       - op: replace
         path: /metadata/name
-        value: 'blazer-cars-lab-bmc-super1'
+        value: 'gitops-sno-oe-bmc-super1'
   - target:
       kind: Secret
       name: bmc-super2
     patch: |-
       - op: replace
         path: /metadata/name
-        value: 'blazer-cars-lab-bmc-super2'
+        value: 'gitops-sno-oe-bmc-super2'
   - target:
       kind: Secret
       name: bmc-super3
     patch: |-
       - op: replace
         path: /metadata/name
-        value: 'blazer-cars-lab-bmc-super3'
+        value: 'gitops-sno-oe-bmc-super3'
   - target:
       kind: ManagedCluster
     patch: |-
       - op: replace
         path: /metadata/name
-        value: 'blazer-cars-lab'
+        value: 'gitops-sno-oe'
   - target:
       kind: BareMetalHost
-      name: super1
-    path: ./patches/bmh-blazer-cars-lab-super1-patch.yaml
-  - target:
-      kind: BareMetalHost
-      name: super2
-    path: ./patches/bmh-blazer-cars-lab-super2-patch.yaml
-  - target:
-      kind: BareMetalHost
-      name: super3
-    path: ./patches/bmh-blazer-cars-lab-super3-patch.yaml
+      name: sno
+    path: ./patches/bmh-gitops-sno-oe-sno-patch.yaml
   - target:
       kind: ClusterDeployment
     path: ./patches/clusterdeployment-patch.yaml

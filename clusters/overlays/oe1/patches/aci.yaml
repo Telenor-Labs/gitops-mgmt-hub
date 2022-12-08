@@ -8,7 +8,7 @@ spec:
   apiVIP: 10.50.56.98
   ingressVIP: 10.50.56.99
   clusterDeploymentRef:
-    name: blazer-cars-lab
+    name: gitops-sno-oe
   imageSetRef:
     name: img4.10.16
   networking:

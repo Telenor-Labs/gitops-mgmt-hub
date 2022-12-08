@@ -1,9 +1,9 @@
 - op: replace
   path: /spec/clusterInstallRef/name
-  value: 'blazer-cars-lab'
+  value: 'gitops-sno-oe'
 - op: replace
   path: '/spec/platform/agentBareMetal/agentSelector/matchLabels/cluster-name'
-  value: 'blazer-cars-lab'
+  value: 'gitops-sno-oe'
 - op: replace
   path: /spec/clusterName
   value: 'blazer'
@@ -12,4 +12,4 @@
   value: 'assisted-deployment-pull-secret'
 - op: replace
   path: /metadata/name
-  value: blazer-cars-lab
+  value: gitops-sno-oe
