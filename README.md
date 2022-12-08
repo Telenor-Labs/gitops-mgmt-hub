@@ -1,10 +1,10 @@
-# vse-carslab-hub
+# gitops-mgmt-hub
 A repository for deploying OpenShift clusters with Red Hat Advanced Cluster Management for Kubernetes and OpenShift GitOps.  
 All cluster lifecycle is managed by Argo CD, including the Argo configuration itself.
 
 ## How to run it
 ```shell
-until oc apply -k https://github.com/redhat-partner-solutions/vse-carslab-hub/bootstrap/overlays/default; do sleep 3; done
+until oc apply -k https://github.com/Telenor-Labs/gitops-mgmt-hub/bootstrap/overlays/default; do sleep 3; done
 ```
 
 # Structure
