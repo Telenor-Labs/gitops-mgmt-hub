@@ -38,25 +38,11 @@ patches:
         value: 'gitops-sno-oe'
   - target:
       kind: Secret
-      name: bmc-super1
+      name: bmc-sno
     patch: |-
       - op: replace
         path: /metadata/name
-        value: 'gitops-sno-oe-bmc-super1'
-  - target:
-      kind: Secret
-      name: bmc-super2
-    patch: |-
-      - op: replace
-        path: /metadata/name
-        value: 'gitops-sno-oe-bmc-super2'
-  - target:
-      kind: Secret
-      name: bmc-super3
-    patch: |-
-      - op: replace
-        path: /metadata/name
-        value: 'gitops-sno-oe-bmc-super3'
+        value: 'gitops-sno-oe-bmc-sno'
   - target:
       kind: ManagedCluster
     patch: |-
