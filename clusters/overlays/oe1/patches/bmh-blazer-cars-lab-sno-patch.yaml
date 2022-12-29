@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/bootMACAddress
-  value: 'DE:AD:BE:EF:A0:1D'
+  value: 'B4:96:91:BF:CC:20'
 - op: replace
   path: /spec/bmc/address
   # yamllint disable-line rule:line-length

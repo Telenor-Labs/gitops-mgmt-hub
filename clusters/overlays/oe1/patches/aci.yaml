@@ -10,7 +10,7 @@ spec:
   clusterDeploymentRef:
     name: gitops-sno-oe
   imageSetRef:
-    name: img4.10.16
+    name: img4.11.9
   networking:
     clusterNetwork:
       - cidr: 10.128.0.0/14
@@ -18,6 +18,6 @@ spec:
     serviceNetwork:
       - 172.30.0.0/16
     machineNetwork:
-      - cidr: 10.50.56.0/24
+      - cidr: 10.16.16.0/24
   # yamllint disable-line rule:line-length
-  sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDFC9CIV1mjDw9VRgfDyPJUNm1BAzjK7xD6JdZeYydYFIbqEN0t+iFK0pEcaj83wuU2HBvd32IHfYJYuHxzkXun2t1h5SPKmyIzQEFGhxWEWDqhzYefHuNU94adpk82qsHssDxNVhDPSZFIc6L/6K3YQyBmeHkC5Pq+NYIk0M+VOGgWXIob+yH8A3mIdN3e3GWPdUIJqFS40BVqfsZIUuUHv9RHYqrCjoJKDlbTO5kFcr5esAyjPX9P7uPCgGgQ4Omtol4G4nzYsti3IpT5dC4IigWkFqb4qwYevn+dkIB7Ju/X43iyylku9ftBf0SkUCylwZJ0JjGmh5avZBAJJS3DTPWQDualOekiD1edlN+b0RQq02iPv945KEh3KDPjf0DSb2GTr0+8GuVWOAzT0slUNV70mmEKkBsk84TD4TPVcSD5E7iogEA6HGaXIY7ab2D2qDpGGnf8u9N4taxpXm4ZmOOBnz4dVMtF6fvzUPfzP9rChVVc8dRFtIW1yARTBtML2yww12XRbsOvq6vAVWJHLfWLycNWbWy8ZSs080/a1auymyWrqfYYO62CYtpNIIO95WpVzl2itL6NZvG9d8VGtjEN6MsSlKy/Lx4x+zS0N3MFVKorZ464zz48oCe8za0hLW5yp5PkudEtVhk1GXq4KrrqNk+A/Ofhdre8H6N9Ew=='
+  sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCMeCQ/mpzMpapDaP17Ja6SW//nWH3vUqQbkizWjZiTIZOGT41sNbsuREcw02a56n/2VCcO0yE2LykbXFTFx0hf6x7Fk0j+RGop19laReR5U0WRNK7lK76aomxrPIgKLxs/ReS5QBNX1UUnsfw/LW0nvEq4So3eVhNePVS3RJchNjPcOLrorAvj7mW+RLURczQIJLHeR99PJVRD/tEwaaKr43aGu/RKHrmJl/3dZ1E6N2D89hZP/Mf3li0fFOSCNHS4bJ8uMAp5Z6Bs8/1QvRYCy+JVix+VxX5dNc+NS2r3D0EidHxvvsvef7PvE/s7j2Z28vdptLgSPYaOcc6klxHGJxQIxGpI42m/0kM7TzlBzkPaOM70dyt3FegYFNB0UYYVUF5UGVFHYfIOStZAnWDdf8CVwkR1z71haYAy7qAitVL3/4zJMttCm8o7nYPVGEK2T8717XAA+ghvjcPjhNMyAZF5v0bvT4OUYcQ8vNtQmZbiOK3qeB3kaCd8iU84PL8='
