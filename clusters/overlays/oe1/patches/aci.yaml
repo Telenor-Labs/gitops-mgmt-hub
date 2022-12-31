@@ -10,7 +10,7 @@ spec:
   clusterDeploymentRef:
     name: gitops-sno-oe
   imageSetRef:
-    name: img4.11.9
+    name: openshift-v4.11.9
   networking:
     clusterNetwork:
       - cidr: 10.128.0.0/14

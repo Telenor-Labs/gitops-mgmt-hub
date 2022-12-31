@@ -14,7 +14,7 @@ spec:
     interfaces:
       - ipv4:
           address:
-            - ip: 10.16.16.44
+            - ip: 10.16.16.12
               prefix-length: 24
           enabled: true
         name: ens43f0
