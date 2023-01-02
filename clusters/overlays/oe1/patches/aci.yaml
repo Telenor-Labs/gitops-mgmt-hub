@@ -5,8 +5,8 @@ metadata:
   name: cluster
   namespace: cluster-name
 spec:
-  apiVIP: 10.16.16.44
-  ingressVIP: 10.16.16.44
+  apiVIP: 10.16.16.12
+  ingressVIP: 10.16.16.12
   clusterDeploymentRef:
     name: gitops-sno-oe
   imageSetRef:

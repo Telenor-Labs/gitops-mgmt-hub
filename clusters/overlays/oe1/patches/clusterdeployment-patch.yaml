@@ -6,7 +6,7 @@
   value: 'gitops-sno-oe'
 - op: replace
   path: /spec/clusterName
-  value: 'blazer'
+  value: 'sno'
 - op: replace
   path: '/spec/pullSecretRef/name'
   value: 'assisted-deployment-pull-secret'
